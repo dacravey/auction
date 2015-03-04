@@ -6,7 +6,7 @@
     <form>
       <div class="form-group">
         <label for="Name">Product Title:</label>
-        {{input name="name" value=name type="text" placeholder="Name of item"}}
+        {{input name="name" value=name type="text" placeholder="Name of item" required="required"}}
       </div>
       <div class="form-group">
         <label for="description">Description:</label>
@@ -32,6 +32,10 @@
         <label for="year">Year Acquired:</label>
         {{input name="year" value=year type="text"}}
       </div>
+      <div class="form-group">
+        <label for="photo">Upload Picture:</label>
+        {{input name="photo" value=photo type="url"}}
+      </div>
       <button class="btn btn-default" {{action 'save'}}>Submit</button>
     </form>
 </div>
@@ -39,7 +43,7 @@
 <div class="container">
   <p>hi there</p>
   {{#each products}}
-    <p>{{name}} {{description}}</p>
+     <img {{bind-attr src = photo}} height="42" width="42"><p>{{photo}} {{name}} {{description}}</p>
   {{/each}}
 
   {{outlet}}

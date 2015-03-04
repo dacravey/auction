@@ -6,5 +6,6 @@ Auction.Product = DS.Model.extend({
   startPrice: DS.attr(),
   backstory: DS.attr(),
   year: DS.attr(),
+  photo: DS.attr(),
   lot: DS.belongsTo('lot', {async: true})
 });

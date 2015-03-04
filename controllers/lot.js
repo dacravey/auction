@@ -9,7 +9,8 @@ Auction.LotController = Ember.ObjectController.extend({
         bidNumber: this.get('bidNumber'),
         startPrice: this.get('startPrice'),
         backstory: this.get('backstory'),
-        year: this.get('year')
+        year: this.get('year'),
+        photo: this.get('photo')
       });
       product.save();
       console.log(product)
