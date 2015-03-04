@@ -9,6 +9,8 @@ Auction.LotsController = Ember.ArrayController.extend({
 
       newLot.save();
 
+      this.set('title', null),
+      this.set('date', null)
     }
   }
 });

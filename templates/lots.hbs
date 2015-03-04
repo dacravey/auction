@@ -16,7 +16,7 @@
 <div class="container">
 <ul>
   {{#each }}
-    <li>{{title}}</li>
+    <li>{{#link-to 'lot' this.id}}{{title}}{{/link-to}}</li>
   {{/each}}
 </ul>
 </div>
