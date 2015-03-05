@@ -43,8 +43,7 @@
 <div class="container">
   <p></p>
   {{#each item in products}}
-     <p><img {{bind-attr src = photo}} height="82" width="82">  {{name}} {{description}}
-     <button class="btn btn-danger" {{action 'delete' item}}>Delete</button></p>
+     <p><img {{bind-attr src = photo}} height="82" width="82"> {{#link-to 'product' item.id}} {{item.name}} {{item.owner}} {{item.bidNumber}} {{item.startPrice}}{{/link-to}}</p>
   {{/each}}
 
   {{outlet}}
