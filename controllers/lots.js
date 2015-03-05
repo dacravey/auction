@@ -10,7 +10,6 @@ Auction.LotsController = Ember.ArrayController.extend({
       this.set('title', null),
       this.set('date', null)
     },
-
     delete: function(lot) {
       if (confirm("Are you sure?")) {
       lot.destroyRecord();
