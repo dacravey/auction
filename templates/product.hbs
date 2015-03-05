@@ -42,7 +42,7 @@
   </div>
 {{else}}
 
-  <p><img {{bind-attr src = photo}} height="164" width="164"> {{owner}} {{bidNumber}} {{startPrice}} {{description}} {{backstory}} {{year}}</p>
+  <p><img {{bind-attr src = photo}} height="90%" width="90%"> {{owner}} {{bidNumber}} {{startPrice}} {{description}} {{backstory}} {{year}}</p>
     <button class="btn btn-primary" {{action 'edit'}}>Edit</button>
     <button class="btn btn-danger" {{action 'delete' this}}>Delete</button>
 {{/if}}
