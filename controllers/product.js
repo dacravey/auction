@@ -1,3 +1,3 @@
-Auction.ProductController = Ember.Controller.extend({
+Auction.ProductController = Ember.ObjectController.extend({
 
 });
