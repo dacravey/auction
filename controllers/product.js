@@ -12,6 +12,7 @@ Auction.ProductController = Ember.ObjectController.extend({
     delete: function(product) {
       if (confirm("Are you sure?")) {
       product.destroyRecord();
+      this.transitionToRoute('lots');
       }
     }
   }

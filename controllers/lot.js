@@ -29,6 +29,8 @@ Auction.LotController = Ember.ObjectController.extend({
     delete: function(product) {
       if (confirm("Are you sure?")) {
       product.destroyRecord();
+      var lot = this.get('model');
+      lot.get('products').removeObject(product);
       }
     }
   }
