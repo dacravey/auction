@@ -1,5 +1,5 @@
 Auction.LotController = Ember.ObjectController.extend({
-  needs: ['lot'],
+  // needs: ['lot'],
   actions: {
     save: function() {
       var product = this.store.createRecord('product', {
@@ -14,16 +14,15 @@ Auction.LotController = Ember.ObjectController.extend({
       });
       product.save();
 
-      var lot = this.get('controllers.lot.model');
+      var lot = this.get('model');
       lot.get('products').pushObject(product);
       lot.save();
     },
 
-    delete: function() {
+    delete: function(product) {
       if (confirm("Are you sure?")) {
         console.log ("got here")
-        console.log(this.get('model'))
-      this.get('product').destroyRecord();
+      product.destroyRecord();
 
       // lot.get('products').destroyRecord();
       }

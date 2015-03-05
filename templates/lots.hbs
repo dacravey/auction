@@ -15,9 +15,9 @@
 </div>
 <div class="container">
 <ul>
-  {{#each }}
-    <li>{{#link-to 'lot' this.id}}{{title}}{{/link-to}}</li>
-    <button class="btn btn-danger" {{action 'delete'}}>Delete</button>
+  {{#each}}
+    <li>{{#link-to 'lot' this.id}}{{title}}{{/link-to}}
+    <button class="btn btn-danger" {{action 'delete' this}}>Delete</button></li>
 
   {{/each}}
 </ul>

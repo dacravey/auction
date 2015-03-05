@@ -1,5 +1,5 @@
 <h2>Here is the {{title}} Lot:</h2>
-{{date}}
+
 
 <div class="container">
   <h2>Add Products to this lot</h2>
@@ -41,10 +41,10 @@
 </div>
 
 <div class="container">
-  <p>hi there</p>
-  {{#each products}}
-     <img {{bind-attr src = photo}} height="42" width="42"><p>{{photo}} {{name}} {{description}}</p>
-     <button class="btn btn-danger" {{action 'delete'}}>Delete</button>
+  <p></p>
+  {{#each item in products}}
+     <p><img {{bind-attr src = photo}} height="82" width="82">  {{name}} {{description}}
+     <button class="btn btn-danger" {{action 'delete' item}}>Delete</button></p>
   {{/each}}
 
   {{outlet}}
