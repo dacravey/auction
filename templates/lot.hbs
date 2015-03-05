@@ -6,7 +6,7 @@
     <form>
       <div class="form-group">
         <label for="Name">Product Title:</label>
-        {{input name="name" value=name type="text" placeholder="Name of item" required="required"}}
+        {{input name="name" value=name type="text" placeholder="Name of item"}}
       </div>
       <div class="form-group">
         <label for="description">Description:</label>
@@ -44,6 +44,7 @@
   <p>hi there</p>
   {{#each products}}
      <img {{bind-attr src = photo}} height="42" width="42"><p>{{photo}} {{name}} {{description}}</p>
+     <button class="btn btn-danger" {{action 'delete'}}>Delete</button>
   {{/each}}
 
   {{outlet}}

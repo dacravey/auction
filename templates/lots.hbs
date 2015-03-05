@@ -17,6 +17,8 @@
 <ul>
   {{#each }}
     <li>{{#link-to 'lot' this.id}}{{title}}{{/link-to}}</li>
+    <button class="btn btn-danger" {{action 'delete'}}>Delete</button>
+
   {{/each}}
 </ul>
 </div>
