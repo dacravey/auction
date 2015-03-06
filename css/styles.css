@@ -1,3 +1,39 @@
 body {
 font-family: 'Caudex', serif;
 }
+
+/*.carousel-element{
+    margin-left: -100px;
+}*/
+
+/*.carousel{
+    margin-top: 20px;
+}*/
+
+/*.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 70%;
+    margin: auto;
+}*/
+
+
+.inner-item {
+    text-align: center;
+    img {
+        margin: 0 auto;
+    }
+}
+
+/*.bs-example{
+	margin: 20px;
+}*/
+.item{
+    /*background: #333;*/
+    text-align: center;
+    height: 500px;
+    width: auto;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
